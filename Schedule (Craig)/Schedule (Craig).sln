@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# SharpDevelop 4.4
+Project("{FD48973F-F585-4F70-812B-4D0503B36CE9}") = "Schedule (Craig)", "Schedule (Craig)\Schedule (Craig).pyproj", "{60288A2B-8DE0-4044-8A09-EF8B91C5DFF5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60288A2B-8DE0-4044-8A09-EF8B91C5DFF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60288A2B-8DE0-4044-8A09-EF8B91C5DFF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60288A2B-8DE0-4044-8A09-EF8B91C5DFF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60288A2B-8DE0-4044-8A09-EF8B91C5DFF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,12 @@
+C:\Users\dickman.a1\Desktop\Programming 1\Biography\Biography\bin\Debug\Biography.exe.config
+C:\Users\dickman.a1\Desktop\Programming 1\Biography\Biography\bin\Debug\Biography.exe
+C:\Users\dickman.a1\Desktop\Programming 1\Biography\Biography\bin\Debug\Biography.dll
+C:\Users\dickman.a1\Desktop\Programming 1\Biography\Biography\bin\Debug\IronPython.dll
+C:\Users\dickman.a1\Desktop\Programming 1\Biography\Biography\bin\Debug\IronPython.Modules.dll
+C:\Users\dickman.a1\Desktop\Programming 1\Biography\Biography\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\dickman.a1\Desktop\Programming 1\Biography\Biography\bin\Debug\Microsoft.Scripting.dll
+C:\Users\dickman.a1\Desktop\Programming 1\Biography\Biography\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\dickman.a1\Desktop\Programming 1\Biography\Biography\obj\Debug\Biography.pyprojResolveAssemblyReference.cache
+C:\Users\dickman.a1\Desktop\Programming 1\Biography\Biography\obj\Debug\Biography.MainForm.resources
+C:\Users\dickman.a1\Desktop\Programming 1\Biography\Biography\obj\Debug\Biography.pyproj.GenerateResource.Cache
+C:\Users\dickman.a1\Desktop\Programming 1\Biography\Biography\obj\Debug\Biography.exe
