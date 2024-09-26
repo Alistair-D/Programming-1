@@ -1,0 +1,12 @@
+C:\Users\dickman.a1\Desktop\Programming 1\Prog54c\Prog54c\bin\Debug\Prog54c.exe.config
+C:\Users\dickman.a1\Desktop\Programming 1\Prog54c\Prog54c\bin\Debug\Prog54c.exe
+C:\Users\dickman.a1\Desktop\Programming 1\Prog54c\Prog54c\bin\Debug\Prog54c.dll
+C:\Users\dickman.a1\Desktop\Programming 1\Prog54c\Prog54c\bin\Debug\IronPython.dll
+C:\Users\dickman.a1\Desktop\Programming 1\Prog54c\Prog54c\bin\Debug\IronPython.Modules.dll
+C:\Users\dickman.a1\Desktop\Programming 1\Prog54c\Prog54c\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\dickman.a1\Desktop\Programming 1\Prog54c\Prog54c\bin\Debug\Microsoft.Scripting.dll
+C:\Users\dickman.a1\Desktop\Programming 1\Prog54c\Prog54c\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\dickman.a1\Desktop\Programming 1\Prog54c\Prog54c\obj\Debug\Prog54c.pyprojResolveAssemblyReference.cache
+C:\Users\dickman.a1\Desktop\Programming 1\Prog54c\Prog54c\obj\Debug\Prog54c.MainForm.resources
+C:\Users\dickman.a1\Desktop\Programming 1\Prog54c\Prog54c\obj\Debug\Prog54c.pyproj.GenerateResource.Cache
+C:\Users\dickman.a1\Desktop\Programming 1\Prog54c\Prog54c\obj\Debug\Prog54c.exe
