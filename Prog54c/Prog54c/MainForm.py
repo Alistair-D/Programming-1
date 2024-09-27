@@ -17,10 +17,12 @@ class MainForm(Form):
         self._label1 = System.Windows.Forms.Label()
         self._label2 = System.Windows.Forms.Label()
         self._label3 = System.Windows.Forms.Label()
-        self._textBox2 = System.Windows.Forms.TextBox()
         self._label4 = System.Windows.Forms.Label()
-        self._textBox3 = System.Windows.Forms.TextBox()
         self._label5 = System.Windows.Forms.Label()
+        self._label6 = System.Windows.Forms.Label()
+        self._label7 = System.Windows.Forms.Label()
+        self._label8 = System.Windows.Forms.Label()
+        self._label9 = System.Windows.Forms.Label()
         self.SuspendLayout()
         # 
         # textBox1
@@ -99,14 +101,6 @@ class MainForm(Form):
         self._label3.Text = "Area:"
         self._label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         # 
-        # textBox2
-        # 
-        self._textBox2.Font = System.Drawing.Font("Microsoft Sans Serif", 25.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._textBox2.Location = System.Drawing.Point(105, 136)
-        self._textBox2.Name = "textBox2"
-        self._textBox2.Size = System.Drawing.Size(274, 46)
-        self._textBox2.TabIndex = 7
-        # 
         # label4
         # 
         self._label4.Font = System.Drawing.Font("Microsoft Sans Serif", 12.25, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0)
@@ -121,14 +115,6 @@ V
 """
         self._label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         # 
-        # textBox3
-        # 
-        self._textBox3.Font = System.Drawing.Font("Microsoft Sans Serif", 25.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._textBox3.Location = System.Drawing.Point(105, 208)
-        self._textBox3.Name = "textBox3"
-        self._textBox3.Size = System.Drawing.Size(274, 46)
-        self._textBox3.TabIndex = 10
-        # 
         # label5
         # 
         self._label5.Font = System.Drawing.Font("Microsoft Sans Serif", 12.25, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0)
@@ -140,14 +126,52 @@ V
         self._label5.Text = "C :"
         self._label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         # 
+        # label6
+        # 
+        self._label6.BackColor = System.Drawing.Color.Cornsilk
+        self._label6.Font = System.Drawing.Font("Microsoft Sans Serif", 18.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
+        self._label6.Location = System.Drawing.Point(105, 133)
+        self._label6.Name = "label6"
+        self._label6.Size = System.Drawing.Size(260, 38)
+        self._label6.TabIndex = 10
+        # 
+        # label7
+        # 
+        self._label7.BackColor = System.Drawing.Color.Cornsilk
+        self._label7.Font = System.Drawing.Font("Microsoft Sans Serif", 18.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
+        self._label7.Location = System.Drawing.Point(105, 204)
+        self._label7.Name = "label7"
+        self._label7.Size = System.Drawing.Size(260, 38)
+        self._label7.TabIndex = 11
+        # 
+        # label8
+        # 
+        self._label8.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        self._label8.Font = System.Drawing.Font("Microsoft Sans Serif", 18.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
+        self._label8.Location = System.Drawing.Point(91, 133)
+        self._label8.Name = "label8"
+        self._label8.Size = System.Drawing.Size(274, 49)
+        self._label8.TabIndex = 10
+        self._label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        # 
+        # label9
+        # 
+        self._label9.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        self._label9.Font = System.Drawing.Font("Microsoft Sans Serif", 18.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
+        self._label9.Location = System.Drawing.Point(91, 206)
+        self._label9.Name = "label9"
+        self._label9.Size = System.Drawing.Size(274, 48)
+        self._label9.TabIndex = 11
+        self._label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        # 
         # MainForm
         # 
         self.BackColor = System.Drawing.SystemColors.ControlText
         self.ClientSize = System.Drawing.Size(936, 434)
-        self.Controls.Add(self._textBox3)
+        self.Controls.Add(self._label9)
+        self.Controls.Add(self._label8)
         self.Controls.Add(self._label5)
         self.Controls.Add(self._label4)
-        self.Controls.Add(self._textBox2)
         self.Controls.Add(self._label3)
         self.Controls.Add(self._label2)
         self.Controls.Add(self._label1)
@@ -168,7 +192,14 @@ V
         Application.Exit()
 
     def Button1Click(self, sender, e):
-        pass
+        radius = float(self._textBox1.Text)
+        Pi = 3.14159
+        Circumference = 2 * Pi * radius
+        Area = round(Pi * radius**2,3)
+        self._label9.Text = str(Circumference)
+        self._label8.Text = str(Area)
 
     def Button2Click(self, sender, e):
-        pass
+        self._textBox1.Text = ""
+        self._label9.Text = ""
+        self._label8.Text = ""
