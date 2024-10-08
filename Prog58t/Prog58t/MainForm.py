@@ -127,15 +127,18 @@ class MainForm(Form):
         TotalDue  = float(self._textBox1.Text)
         TotalPaid    = float(self._textBox3.Text)
         Change  = float(TotalDue - TotalPaid)
-        Change = float(self._label1.Text
-
-    def Button2Click(self, sender, e):
-        self._textBox1.text = ""
-        self._textBox2.Text = ""
-        self._label1.Text   = ""
-
+        Change = float(self._label1.Text)
+        QuartChange = float(Change /25)
+        
+        self._label1.Text = "Total = " + str(Total) + "\nPaid = " +str(Paid) + str(Change) + "\nQuarters Due " 
+       
     def Button3Click(self, sender, e):
         Application.Exit()
 
     def Label1Click(self, sender, e):
         pass
+
+    def Button2Click(self, sender, e):
+        self._textBox1.Text = ""
+        self._textBox3.Text = ""
+        self._label1.Text = ""
