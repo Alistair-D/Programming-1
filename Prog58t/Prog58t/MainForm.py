@@ -17,6 +17,13 @@ class MainForm(Form):
         self._label2 = System.Windows.Forms.Label()
         self._label3 = System.Windows.Forms.Label()
         self._textBox3 = System.Windows.Forms.TextBox()
+        self._label4 = System.Windows.Forms.Label()
+        self._label5 = System.Windows.Forms.Label()
+        self._label6 = System.Windows.Forms.Label()
+        self._label7 = System.Windows.Forms.Label()
+        self._label11 = System.Windows.Forms.Label()
+        self._label12 = System.Windows.Forms.Label()
+        self._label8 = System.Windows.Forms.Label()
         self.SuspendLayout()
         # 
         # button1
@@ -56,10 +63,11 @@ class MainForm(Form):
         # 
         self._label1.BackColor = System.Drawing.Color.CornflowerBlue
         self._label1.Font = System.Drawing.Font("Microsoft Sans Serif", 16.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._label1.Location = System.Drawing.Point(125, 257)
+        self._label1.Location = System.Drawing.Point(22, 260)
         self._label1.Name = "label1"
-        self._label1.Size = System.Drawing.Size(507, 115)
+        self._label1.Size = System.Drawing.Size(370, 31)
         self._label1.TabIndex = 3
+        self._label1.Text = "Total = "
         self._label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         self._label1.Click += self.Label1Click
         # 
@@ -102,10 +110,94 @@ class MainForm(Form):
         self._textBox3.Size = System.Drawing.Size(220, 30)
         self._textBox3.TabIndex = 7
         # 
+        # label4
+        # 
+        self._label4.BackColor = System.Drawing.Color.CornflowerBlue
+        self._label4.Font = System.Drawing.Font("Microsoft Sans Serif", 16.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
+        self._label4.Location = System.Drawing.Point(22, 343)
+        self._label4.Name = "label4"
+        self._label4.Size = System.Drawing.Size(370, 31)
+        self._label4.TabIndex = 9
+        self._label4.Text = "Change = "
+        self._label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        # 
+        # label5
+        # 
+        self._label5.BackColor = System.Drawing.Color.CornflowerBlue
+        self._label5.Font = System.Drawing.Font("Microsoft Sans Serif", 16.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
+        self._label5.Location = System.Drawing.Point(22, 305)
+        self._label5.Name = "label5"
+        self._label5.Size = System.Drawing.Size(370, 27)
+        self._label5.TabIndex = 10
+        self._label5.Text = "Paid = "
+        self._label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        # 
+        # label6
+        # 
+        self._label6.BackColor = System.Drawing.Color.CornflowerBlue
+        self._label6.Font = System.Drawing.Font("Microsoft Sans Serif", 16.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
+        self._label6.Location = System.Drawing.Point(22, 435)
+        self._label6.Name = "label6"
+        self._label6.Size = System.Drawing.Size(370, 25)
+        self._label6.TabIndex = 11
+        self._label6.Text = "Quarters Due ="
+        self._label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        # 
+        # label7
+        # 
+        self._label7.BackColor = System.Drawing.Color.CornflowerBlue
+        self._label7.Font = System.Drawing.Font("Microsoft Sans Serif", 16.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
+        self._label7.Location = System.Drawing.Point(422, 263)
+        self._label7.Name = "label7"
+        self._label7.Size = System.Drawing.Size(370, 28)
+        self._label7.TabIndex = 12
+        self._label7.Text = "Dimes Due ="
+        self._label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        # 
+        # label11
+        # 
+        self._label11.BackColor = System.Drawing.Color.CornflowerBlue
+        self._label11.Font = System.Drawing.Font("Microsoft Sans Serif", 16.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
+        self._label11.Location = System.Drawing.Point(425, 353)
+        self._label11.Name = "label11"
+        self._label11.Size = System.Drawing.Size(367, 31)
+        self._label11.TabIndex = 14
+        self._label11.Text = "Pennies Due ="
+        self._label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        # 
+        # label12
+        # 
+        self._label12.BackColor = System.Drawing.Color.CornflowerBlue
+        self._label12.Font = System.Drawing.Font("Microsoft Sans Serif", 16.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
+        self._label12.Location = System.Drawing.Point(422, 305)
+        self._label12.Name = "label12"
+        self._label12.Size = System.Drawing.Size(367, 31)
+        self._label12.TabIndex = 13
+        self._label12.Text = "Nickels Due:"
+        self._label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        # 
+        # label8
+        # 
+        self._label8.BackColor = System.Drawing.Color.CornflowerBlue
+        self._label8.Font = System.Drawing.Font("Microsoft Sans Serif", 16.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
+        self._label8.Location = System.Drawing.Point(22, 387)
+        self._label8.Name = "label8"
+        self._label8.Size = System.Drawing.Size(370, 31)
+        self._label8.TabIndex = 15
+        self._label8.Text = "Dollars Due = "
+        self._label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        # 
         # MainForm
         # 
         self.BackColor = System.Drawing.Color.Black
-        self.ClientSize = System.Drawing.Size(823, 455)
+        self.ClientSize = System.Drawing.Size(842, 479)
+        self.Controls.Add(self._label8)
+        self.Controls.Add(self._label11)
+        self.Controls.Add(self._label12)
+        self.Controls.Add(self._label7)
+        self.Controls.Add(self._label6)
+        self.Controls.Add(self._label5)
+        self.Controls.Add(self._label4)
         self.Controls.Add(self._label3)
         self.Controls.Add(self._textBox3)
         self.Controls.Add(self._label2)
@@ -126,15 +218,23 @@ class MainForm(Form):
     def Button1Click(self, sender, e):
         TotalDue  = float(self._textBox1.Text)
         TotalPaid    = float(self._textBox3.Text)
-        Change  = float(TotalDue - TotalPaid)
-        Change = float(self._label1.Text)
-        QuartChange = float(Change /25)
+        Change  = float(TotalPaid - TotalDue)
+        QuartersDue = int(Change / 0.25)
+        DollarsDue = int(Change / 1)
+        DimesDue = float(DollarsDue * 10)
+        NickelsDue = int(DollarsDue * 20)
         
-        self._label1.Text = "Total = " + str(Total) + "\nPaid = " +str(Paid) + str(Change) + "\nQuarters Due " 
-       
+        self._label1.Text = "Total = " + str(TotalDue)
+        self._label5.Text = "Paid = " + str(TotalPaid)
+        self._label4.Text = "Change = " + str(Change)
+        self._label6.Text = "Quarters Due = " + str(QuartersDue)
+        self._label8.Text = "Dollars Due = " + str(DollarsDue)
+        self._label7.Text = "Dimes Due = " + str(DimesDue)
+        self._label12.Text = "Nickels Due = "  + str(NickelsDue)
+        
     def Button3Click(self, sender, e):
         Application.Exit()
-
+        
     def Label1Click(self, sender, e):
         pass
 
