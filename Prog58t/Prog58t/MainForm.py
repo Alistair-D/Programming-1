@@ -219,10 +219,18 @@ class MainForm(Form):
         TotalDue  = float(self._textBox1.Text)
         TotalPaid    = float(self._textBox3.Text)
         Change  = float(TotalPaid - TotalDue)
-        QuartersDue = int(Change / 0.25)
-        DollarsDue = int(Change / 1)
-        DimesDue = float(DollarsDue * 10)
-        NickelsDue = int(DollarsDue * 20)
+        DollarsDue = float(Change / 1)
+        QuartersDue = int(DollarsDue * 0.25 - 1)
+        DimesDue = int(DollarsDue / 10)
+        NickelsDue = (DimesDue / 1)
+        Dollars = float(DollarsDue * .100)
+        AmountOfQuarters = int(QuartersDue * .25)
+        AmountOfDimes = int(DimesDue * .10)
+        AmountOfNickels = int(NickelsDue * .5)
+        PenniesDue = int(Change - 10 - Dollars - AmountOfQuarters - AmountOfDimes - AmountOfNickels)
+        if PenniesDue <= 0:
+            PenniesDue = 0
+        
         
         self._label1.Text = "Total = " + str(TotalDue)
         self._label5.Text = "Paid = " + str(TotalPaid)
@@ -231,6 +239,8 @@ class MainForm(Form):
         self._label8.Text = "Dollars Due = " + str(DollarsDue)
         self._label7.Text = "Dimes Due = " + str(DimesDue)
         self._label12.Text = "Nickels Due = "  + str(NickelsDue)
+        self._label11.Text = "Pennies Due = " + str(PenniesDue)
+        
         
     def Button3Click(self, sender, e):
         Application.Exit()
