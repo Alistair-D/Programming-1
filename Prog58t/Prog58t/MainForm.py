@@ -217,29 +217,29 @@ class MainForm(Form):
 
     def Button1Click(self, sender, e):
         TotalDue  = float(self._textBox1.Text)
-        TotalPaid    = float(self._textBox3.Text)
-        Change  = float(TotalPaid - TotalDue)
-        DollarsDue = float(Change / 1)
-        QuartersDue = int(DollarsDue * 0.25 - 1)
-        DimesDue = int(DollarsDue / 10)
-        NickelsDue = (DimesDue / 1)
-        Dollars = float(DollarsDue * .100)
-        AmountOfQuarters = int(QuartersDue * .25)
-        AmountOfDimes = int(DimesDue * .10)
-        AmountOfNickels = int(NickelsDue * .5)
-        PenniesDue = int(Change - 10 - Dollars - AmountOfQuarters - AmountOfDimes - AmountOfNickels)
-        if PenniesDue <= 0:
-            PenniesDue = 0
-        
-        
+        Paid   = float(self._textBox3.Text)
+        Change = float(Paid - TotalDue)
+        #Change1 is Change at the Start;unchanged
+        Change1 = Change
+        DollarsDue = int(Change / 1)
+        Change = Change - DollarsDue
+        QuartersDue = int(Change / 0.25)
+        Change = Change - (QuartersDue * 0.25)
+        DimesDue = int(Change / 0.10)
+        Change = Change - (DimesDue * 0.10)
+        NickelsDue = int(Change / 0.05)
+        Change = Change - (NickelsDue * 0.05)
+        PenniesDue = int(Change / 0.01)  
+
+
         self._label1.Text = "Total = " + str(TotalDue)
-        self._label5.Text = "Paid = " + str(TotalPaid)
-        self._label4.Text = "Change = " + str(Change)
+        self._label5.Text = "Paid = " + str(Paid)
+        self._label4.Text = "Change = " + str(Change1)
         self._label6.Text = "Quarters Due = " + str(QuartersDue)
         self._label8.Text = "Dollars Due = " + str(DollarsDue)
         self._label7.Text = "Dimes Due = " + str(DimesDue)
         self._label12.Text = "Nickels Due = "  + str(NickelsDue)
-        self._label11.Text = "Pennies Due = " + str(PenniesDue)
+        self._label11.Text = "Pennies Due: " + str(round(PenniesDue,0)) 
         
         
     def Button3Click(self, sender, e):
