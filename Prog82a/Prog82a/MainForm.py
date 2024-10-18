@@ -133,19 +133,20 @@ class MainForm(Form):
         self.ResumeLayout(False)
         self.PerformLayout()
 
-    Speedl = 0
-    Speed = 0
-    Charge = 20.00
-    Addition = 0.0
+    
 
     def Button1Click(self, sender, e):
-        Speedl = self._textBox1.Text
-        Speed = self._textBox2.Text
+        Speed = int(self._textBox2.Text)
+        Speedl = int(self._textBox1.Text)
+        Addition = (Speedl - Speed)
+        Addition1 = Addition * 5.00
+        Charge = 20.00 + Addition1
+        
         if Speed < Speedl:
             self._label1.Text = "No Fine"
-        elif Speed > Speed1:
-            self._label1.Text = "Fine:" + str(Charge) 
-
+        elif Speed > Speedl:
+            self._label1.Text = "Fine: " + str(Charge)
+            
     def Button3Click(self, sender, e):
         pass
 
