@@ -140,7 +140,7 @@ class MainForm(Form):
         Speedl = int(self._textBox1.Text)
         Addition = (Speedl - Speed)
         Addition1 = Addition * 5.00
-        Charge = 20.00 + Addition1
+        Charge = 20.00 
         
         if Speed < Speedl:
             self._label1.Text = "No Fine"
