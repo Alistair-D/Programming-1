@@ -138,13 +138,14 @@ class MainForm(Form):
     def Button1Click(self, sender, e):
         Speed = int(self._textBox2.Text)
         Speedl = int(self._textBox1.Text)
-        Addition = (Speedl - Speed)
-        Addition1 = Addition * 5.00
-        Charge = 20.00 
+        OverLimit = Speed - Speedl
+        Charge = 20.00 + (OverLimit * 5)
         
         if Speed < Speedl:
             self._label1.Text = "No Fine"
+            Charge = 0
         elif Speed > Speedl:
+            Charge = 20.00 + (OverLimit * 5.00)
             self._label1.Text = "Fine: " + str(Charge)
             
     def Button3Click(self, sender, e):
