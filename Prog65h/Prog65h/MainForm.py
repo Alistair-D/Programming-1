@@ -182,11 +182,13 @@ class MainForm(Form):
     # 20 Shillings = Pound
     # 12 Pence = Shilling
     def Button1Click(self, sender, e):
-        Pounds = (self._textBox1.Text)
-        Schillings = (self._textBox2.Text)
-        Pence = (self._textBox3.Text)
+        Pounds = int(self._textBox1.Text)
+        Schillings = float(self._textBox2.Text)
+        Pence = int(self._textBox3.Text)
         
+        TotalAmount = int(Pounds) + float(round(Schillings/20 + Pence/240,2))
         
+        self._label6.Text = str(TotalAmount)
 
     def Button2Click(self, sender, e):
         pass
