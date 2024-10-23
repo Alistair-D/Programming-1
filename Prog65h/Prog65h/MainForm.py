@@ -184,14 +184,17 @@ class MainForm(Form):
     def Button1Click(self, sender, e):
         Pounds = int(self._textBox1.Text)
         Schillings = float(self._textBox2.Text)
-        Pence = int(self._textBox3.Text)
+        Pence = float(self._textBox3.Text)
         
         TotalAmount = int(Pounds) + float(round(Schillings/20 + Pence/240,2))
         
         self._label6.Text = str(TotalAmount)
 
     def Button2Click(self, sender, e):
-        pass
+        self._textBox1.Text = ""
+        self._textBox2.Text = ""
+        self._textBox3.Text = ""
+        self._label6.Text = ""
 
     def Button3Click(self, sender, e):
         Application.Exit()
