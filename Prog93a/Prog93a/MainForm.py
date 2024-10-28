@@ -104,7 +104,7 @@ class MainForm(Form):
         self._label4.ForeColor = System.Drawing.Color.Black
         self._label4.Location = System.Drawing.Point(551, 72)
         self._label4.Name = "label4"
-        self._label4.Size = System.Drawing.Size(166, 27)
+        self._label4.Size = System.Drawing.Size(179, 27)
         self._label4.TabIndex = 7
         self._label4.Text = "BaseRate:"
         # 
@@ -115,7 +115,7 @@ class MainForm(Form):
         self._label5.ForeColor = System.Drawing.Color.Black
         self._label5.Location = System.Drawing.Point(551, 117)
         self._label5.Name = "label5"
-        self._label5.Size = System.Drawing.Size(166, 27)
+        self._label5.Size = System.Drawing.Size(179, 27)
         self._label5.TabIndex = 8
         self._label5.Text = "Surcharge:"
         # 
@@ -126,7 +126,7 @@ class MainForm(Form):
         self._label6.ForeColor = System.Drawing.Color.Black
         self._label6.Location = System.Drawing.Point(551, 164)
         self._label6.Name = "label6"
-        self._label6.Size = System.Drawing.Size(166, 27)
+        self._label6.Size = System.Drawing.Size(179, 27)
         self._label6.TabIndex = 9
         self._label6.Text = "CityTax:"
         # 
@@ -177,11 +177,17 @@ class MainForm(Form):
     def Button1Click(self, sender, e):
         KWH = float(self._textBox1.Text)
         Bsrate   = (round(KWH * 0.0475,2))
-        SRcharge = (round(Bsrate //10,1))
+        SRcharge = float(round(Bsrate / 10,2))
+        CityTax = float (round(SRcharge * 0.3,2))
+        Amount = float (Bsrate + SRcharge + CityTax)
+        Late = float(round(Amount * 0.04,2))
 
 
-        self._label4.Text = str(Bsrate)
-        self._label5.Text = str(SRcharge)
+        self._label4.Text = "Base Rate: $" + str(Bsrate)
+        self._label5.Text = "Surcharge: $" + str(SRcharge)
+        self._label6.Text = "CityTax: $" + str(CityTax)
+        self._label7.Text = "Pay this Amount: $" + str(Amount)
+        self._label8.Text = "After May 20th: $" + str(Late + Amount)
         
     def Button3Click(self, sender, e):
         Application.Exit()
