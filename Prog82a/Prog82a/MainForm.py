@@ -149,7 +149,10 @@ class MainForm(Form):
             self._label1.Text = "Fine: " + str(Charge)
             
     def Button3Click(self, sender, e):
-        pass
+        Application.Exit()
+        self._label1.Text = ""
+        self._textBox2.Text = ""
+        self._textBox1.Text = ""
 
     def Button2Click(self, sender, e):
-        pass
+        Application.Exit()

@@ -13,7 +13,6 @@ class MainForm(Form):
         self._button1 = System.Windows.Forms.Button()
         self._button2 = System.Windows.Forms.Button()
         self._button3 = System.Windows.Forms.Button()
-        self._label1 = System.Windows.Forms.Label()
         self.SuspendLayout()
         # 
         # listBox1
@@ -23,7 +22,7 @@ class MainForm(Form):
         self._listBox1.ItemHeight = 25
         self._listBox1.Location = System.Drawing.Point(12, 12)
         self._listBox1.Name = "listBox1"
-        self._listBox1.Size = System.Drawing.Size(585, 354)
+        self._listBox1.Size = System.Drawing.Size(938, 354)
         self._listBox1.TabIndex = 0
         # 
         # button1
@@ -62,22 +61,10 @@ class MainForm(Form):
         self._button3.UseVisualStyleBackColor = False
         self._button3.Click += self.Button3Click
         # 
-        # label1
-        # 
-        self._label1.BackColor = System.Drawing.Color.White
-        self._label1.Font = System.Drawing.Font("Microsoft YaHei UI", 12.75, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, 0)
-        self._label1.Location = System.Drawing.Point(677, 132)
-        self._label1.Name = "label1"
-        self._label1.Size = System.Drawing.Size(192, 68)
-        self._label1.TabIndex = 4
-        self._label1.Text = "label1"
-        self._label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        # 
         # MainForm
         # 
         self.BackColor = System.Drawing.Color.FromArgb(255, 224, 192)
         self.ClientSize = System.Drawing.Size(962, 435)
-        self.Controls.Add(self._label1)
         self.Controls.Add(self._button3)
         self.Controls.Add(self._button2)
         self.Controls.Add(self._button1)
@@ -88,14 +75,22 @@ class MainForm(Form):
 
 
     def Button1Click(self, sender, e):
-        header = "The Series"
+        header = "The Series of the Sum is:  "
         self._listBox1.Items.Add(header)
-        for num in range (3,9669,3):
-            list = num + num
+        sum = 0
+        for num in range (3,9669+1,3):
+            sum = sum + num 
+        self._listBox1.Items.Add(sum)
+        
+        list = "3 + 6 + 9 + 12 + 15 + 18 + 21 + 24 + ... + 9663 + 9666 + 9669 = " + str(sum)
         self._listBox1.Items.Add(list)
+
         
     def Button2Click(self, sender, e):
-        pass
+        self._listBox1.Items.Clear()
 
     def Button3Click(self, sender, e):
         Application.Exit()
+
+    def Label1Click(self, sender, e):
+        pass
