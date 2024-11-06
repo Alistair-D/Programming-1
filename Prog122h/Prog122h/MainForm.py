@@ -21,9 +21,9 @@ class MainForm(Form):
         self._listBox1.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._listBox1.FormattingEnabled = True
         self._listBox1.ItemHeight = 24
-        self._listBox1.Location = System.Drawing.Point(44, 12)
+        self._listBox1.Location = System.Drawing.Point(12, 12)
         self._listBox1.Name = "listBox1"
-        self._listBox1.Size = System.Drawing.Size(895, 340)
+        self._listBox1.Size = System.Drawing.Size(967, 340)
         self._listBox1.TabIndex = 0
         # 
         # button1
@@ -57,7 +57,7 @@ class MainForm(Form):
         self._button3.BackColor = System.Drawing.Color.DarkSalmon
         self._button3.Font = System.Drawing.Font("Microsoft NeoGothic", 8.25, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, 0)
         self._button3.ForeColor = System.Drawing.Color.DarkSlateBlue
-        self._button3.Location = System.Drawing.Point(757, 360)
+        self._button3.Location = System.Drawing.Point(768, 360)
         self._button3.Name = "button3"
         self._button3.Size = System.Drawing.Size(182, 68)
         self._button3.TabIndex = 3
@@ -68,7 +68,7 @@ class MainForm(Form):
         # MainForm
         # 
         self.BackColor = System.Drawing.Color.Coral
-        self.ClientSize = System.Drawing.Size(973, 427)
+        self.ClientSize = System.Drawing.Size(991, 424)
         self.Controls.Add(self._button3)
         self.Controls.Add(self._button2)
         self.Controls.Add(self._button1)
@@ -79,10 +79,19 @@ class MainForm(Form):
 
     def Button1Click(self, sender, e):
         header = "Number" + "\t\t" + "Square" + "\t\t" +  "Square Root" + "\t\t" + "Cube" + "\t\t" + "4th Root"
+        Number = 0
         self._listBox1.Items.Add(header)
+        for num in range(1,21):
+            num1 = math.sqrt(num)
+            num2 = num * num
+            num3 = num * num * num
+            num4 = num ** 0.25
+            rest = str(num) + "\t\t" + str(num2) + "\t\t" +   str(round(num1,4)) + "\t\t\t" + str(round(num3,4)) + "\t\t" + str(round(num4,4))
+            self._listBox1.Items.Add(rest)            
+            
 
     def Button2Click(self, sender, e):
-        pass
+        self._listBox1.Items.Clear()
 
     def Button3Click(self, sender, e):
-        pass
+        Application.Exit()
