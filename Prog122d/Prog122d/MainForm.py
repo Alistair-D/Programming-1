@@ -84,8 +84,17 @@ class MainForm(Form):
     def Button1Click(self, sender, e):
         for num in range(-12,17):
             X = num
-            Y = X **6 - 3(X)**5 - 93(X)**4 + 87(X)**3 + 1596(X)**2 - 1308(x) - 2800
-            List = str(X) + str(Y)
+            
+            step1 =  int(X ** 6)
+            step2 =  int(-3(X) ** 5)
+            step3 =  int(-93(X) **4)
+            step4 =  int(87(X) **3)
+            step5 =  int(1596(X) ** 2)
+            step6 =  int(-1308(X))
+            step7 =  int(-2800)
+            
+            Value = str(step1) + str(step2) + str(step3) + str(step4) + str(step5) + str(step6) + str(step7)
+            List = str(X) + str(step7)
             self._listBox1.Items.Add(List)
 
     def Button2Click(self, sender, e):
