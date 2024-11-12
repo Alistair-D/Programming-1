@@ -70,7 +70,7 @@ class MainForm(Form):
         # MainForm
         # 
         self.BackColor = System.Drawing.Color.Black
-        self.ClientSize = System.Drawing.Size(955, 469)
+        self.ClientSize = System.Drawing.Size(955, 471)
         self.Controls.Add(self._listBox1)
         self.Controls.Add(self._button3)
         self.Controls.Add(self._button2)
@@ -83,18 +83,18 @@ class MainForm(Form):
 
     def Button1Click(self, sender, e):
         for num in range(-12,17):
-            X = num
+            x = num
             
-            step1 =  int(X ** 6)
-            step2 =  int(-3(X) ** 5)
-            step3 =  int(-93(X) **4)
-            step4 =  int(87(X) **3)
-            step5 =  int(1596(X) ** 2)
-            step6 =  int(-1308(X))
-            step7 =  int(-2800)
+            step1 = x** 6
+            step2 = 3(x) ** 5
+            step3 = 93(x)** 4
+            step4 = 87(x) ** 3
+            step5 = 1596(x)** 2
+            step6 = 1380(x)
+            step7 = 2800
             
-            Value = str(step1) + str(step2) + str(step3) + str(step4) + str(step5) + str(step6) + str(step7)
-            List = str(X) + str(step7)
+            All = int(step1) - int(step2) - int(step3) + int(step4) + int(step5) - int(step6) - int(step7)
+            List = str(x) + "\t\t"  + str(All)
             self._listBox1.Items.Add(List)
 
     def Button2Click(self, sender, e):
