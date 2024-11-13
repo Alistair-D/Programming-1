@@ -85,12 +85,12 @@ class MainForm(Form):
         for num in range(-12,17):
             x = num
             
-            step1 = x** 6
-            step2 = 3(x) ** 5
-            step3 = 93(x)** 4
-            step4 = 87(x) ** 3
-            step5 = 1596(x)** 2
-            step6 = 1380(x)
+            step1 = x ** 6
+            step2 = 3*(x) ** 5
+            step3 = 93*(x)** 4
+            step4 = 87*(x) ** 3
+            step5 = 1596*(x)** 2
+            step6 = 1380*(x)
             step7 = 2800
             
             All = int(step1) - int(step2) - int(step3) + int(step4) + int(step5) - int(step6) - int(step7)
