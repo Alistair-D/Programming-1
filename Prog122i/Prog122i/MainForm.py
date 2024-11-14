@@ -105,6 +105,8 @@ class MainForm(Form):
         pass
 
     def Button1Click(self, sender, e):
+        header = "Number" + "\t" + "Cube Root" + "\t" + "Cube"
+        self._listBox1.Items.Add(header)
         for nums in range(-25,26):
             CubeRoot = float(abs(nums) ** (1/3.00))
             if nums < 0:
@@ -118,7 +120,7 @@ class MainForm(Form):
             self._listBox1.Items.Add(List)
 
     def Button2Click(self, sender, e):
-        self._listBox1.Items(Clear)
+        self._listBox1.Items.Clear()
 
     def Button3Click(self, sender, e):
         Application.Exit()
