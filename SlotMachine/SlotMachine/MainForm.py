@@ -49,6 +49,7 @@ class MainForm(Form):
         # pictureBox1
         # 
         self._pictureBox1.BackColor = System.Drawing.Color.White
+        self._pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         self._pictureBox1.Location = System.Drawing.Point(12, 12)
         self._pictureBox1.Name = "pictureBox1"
         self._pictureBox1.Size = System.Drawing.Size(100, 175)
@@ -58,6 +59,7 @@ class MainForm(Form):
         # pictureBox2
         # 
         self._pictureBox2.BackColor = System.Drawing.Color.White
+        self._pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         self._pictureBox2.Location = System.Drawing.Point(149, 12)
         self._pictureBox2.Name = "pictureBox2"
         self._pictureBox2.Size = System.Drawing.Size(100, 175)
@@ -67,6 +69,7 @@ class MainForm(Form):
         # pictureBox3
         # 
         self._pictureBox3.BackColor = System.Drawing.Color.White
+        self._pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         self._pictureBox3.Location = System.Drawing.Point(293, 12)
         self._pictureBox3.Name = "pictureBox3"
         self._pictureBox3.Size = System.Drawing.Size(100, 175)
@@ -239,6 +242,10 @@ class MainForm(Form):
         self._pictureBox11.TabStop = False
         self._pictureBox11.Visible = False
         # 
+        # timer1
+        # 
+        self._timer1.Tick += self.Timer1Tick
+        # 
         # MainForm
         # 
         self.BackColor = System.Drawing.Color.FromArgb(0, 64, 0)
@@ -315,14 +322,90 @@ class MainForm(Form):
         bet   = float(self._textBox1.Text)
         newmoney = money - bet
         
-        if money == 0:
+        if money <= 0:
             MessageBox.Show("You have no money!")
         elif bet < 1:
             MessageBox.Show("You must bet at least 1 dollar!")
         elif bet > money and bet > newmoney:
             MessageBox.Show("You don't have enough Money!")
         else:
-            #TODO
+            self._button1.BackgroundImage = levOn
+            self._button1.Enabled = False
+            self._pictureBox4.Visible = True
+            self._timer1.Enabled = True
+            self._progressBar1.Value = 0
+            self._label2.Text = str(round(newmoney, 2))
+            
+            num1 = self.num1
+            num2 = self.num2
+            num3 = self.num3
+            
+            if num1 == 1 and num2 == 1 and num3 == 1:
+                newmoney += bet * 2
+            
+            if num1 == 2 and num2 == 2 and num3 == 2:
+                newmoney += bet * 4
+                
+            if num1 == 3 and num2 == 3 and num3 == 3:
+                newmoney += bet * 6
+            
+            if num1 == 4 and num2 == 4 and num3 == 4:
+                newmoney += bet * 8
+                
+            if num1 == 5 and num2 == 5 and num3 == 5:
+                newmoney += bet * 10
+            
+            
+            self.num1 = 0
+            self.num2 = 0
+            self.num3 = 0
+            self._label2.Text = str(round(newmoney, 2))
+            
+            if newmoney <= 0:
+                MessageBox.Show ("You ran out of Cash!!")
+            
             pass
         
+        pass
+
+    def Timer1Tick(self, sender, e):
+        im1 = self._pictureBox5.BackgroundImage
+        im2 = self._pictureBox6.BackgroundImage
+        im3 = self._pictureBox7.BackgroundImage
+        im4 = self._pictureBox8.BackgroundImage
+        im5 = self._pictureBox9.BackgroundImage
+        levOff = self._pictureBox10.BackgroundImage
+        levOn = self._pictureBox11.BackgroundImage
+        rnd = System.Random()
+        num1 = 0
+        num2 = 0
+        num3 = 0    #Copied from Button1Click ^^^
+        
+        pb1 = self._pictureBox1
+        pb2 = self._pictureBox2
+        pb3 = self._pictureBox3
+        images = [im1, im2, im3, im4, im5]
+        
+        for lcv in range(0,1000):
+            num1 = rnd.Next(1, 6)
+            num2 = rnd.Next(1, 6)
+            num3 = rnd.Next(1, 6)
+            
+            self._num1 = num1
+            self._num2 = num2
+            self._num3 = num3
+        
+            pb1.BackgroundImage = images[num1 - 1]
+            pb2.BackgroundImage = images[num2 - 1]
+            pb3.BackgroundImage = images[num3 - 1]
+            
+            self._progressBar1.Increment(1)
+            if self._progressBar1.Value == self._progressBar1.Maximum:
+                self._timer1.Enabled = False
+                self._pictureBox4.Visible = False
+                self._button1.BackgroundImage = levOff
+                self._button1.Enabled = True
+            
+            
+            
         pass
