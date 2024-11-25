@@ -78,8 +78,8 @@ class MainForm(Form):
         # 
         # pictureBox4
         # 
-        self._pictureBox4.BackgroundImage = resources.GetObject("pictureBox4.BackgroundImage")
         self._pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        self._pictureBox4.Image = resources.GetObject("pictureBox4.Image")
         self._pictureBox4.Location = System.Drawing.Point(12, 202)
         self._pictureBox4.Name = "pictureBox4"
         self._pictureBox4.Size = System.Drawing.Size(381, 242)

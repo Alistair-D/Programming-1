@@ -1,0 +1,12 @@
+C:\Users\dickman.a1\Desktop\Programming 1\Pg119FullName\Pg119FullName\obj\Debug\Pg119FullName.pyprojResolveAssemblyReference.cache
+C:\Users\dickman.a1\Desktop\Programming 1\Pg119FullName\Pg119FullName\obj\Debug\Pg119FullName.MainForm.resources
+C:\Users\dickman.a1\Desktop\Programming 1\Pg119FullName\Pg119FullName\obj\Debug\Pg119FullName.pyproj.GenerateResource.Cache
+C:\Users\dickman.a1\Desktop\Programming 1\Pg119FullName\Pg119FullName\bin\Debug\Pg119FullName.exe.config
+C:\Users\dickman.a1\Desktop\Programming 1\Pg119FullName\Pg119FullName\bin\Debug\Pg119FullName.exe
+C:\Users\dickman.a1\Desktop\Programming 1\Pg119FullName\Pg119FullName\bin\Debug\Pg119FullName.dll
+C:\Users\dickman.a1\Desktop\Programming 1\Pg119FullName\Pg119FullName\bin\Debug\IronPython.dll
+C:\Users\dickman.a1\Desktop\Programming 1\Pg119FullName\Pg119FullName\bin\Debug\IronPython.Modules.dll
+C:\Users\dickman.a1\Desktop\Programming 1\Pg119FullName\Pg119FullName\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\dickman.a1\Desktop\Programming 1\Pg119FullName\Pg119FullName\bin\Debug\Microsoft.Scripting.dll
+C:\Users\dickman.a1\Desktop\Programming 1\Pg119FullName\Pg119FullName\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\dickman.a1\Desktop\Programming 1\Pg119FullName\Pg119FullName\obj\Debug\Pg119FullName.exe
