@@ -140,7 +140,7 @@ class MainForm(Form):
     def Button1Click(self, sender, e):
         Fname = str(self._textBox1.Text)
         Lname = str(self._textBox2.Text)
-        fname = str(Fname) + str(Lname)
+        fname = str(Fname) + " " + str(Lname)
         self._label4.Text = str(fname)
 
     def Button2Click(self, sender, e):

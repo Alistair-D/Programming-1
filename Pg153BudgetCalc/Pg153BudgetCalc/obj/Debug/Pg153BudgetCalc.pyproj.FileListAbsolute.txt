@@ -1,0 +1,12 @@
+C:\Users\dickman.a1\Desktop\Programming 1\Pg153BudgetCalc\Pg153BudgetCalc\bin\Debug\Pg153BudgetCalc.exe.config
+C:\Users\dickman.a1\Desktop\Programming 1\Pg153BudgetCalc\Pg153BudgetCalc\bin\Debug\Pg153BudgetCalc.exe
+C:\Users\dickman.a1\Desktop\Programming 1\Pg153BudgetCalc\Pg153BudgetCalc\bin\Debug\Pg153BudgetCalc.dll
+C:\Users\dickman.a1\Desktop\Programming 1\Pg153BudgetCalc\Pg153BudgetCalc\bin\Debug\IronPython.dll
+C:\Users\dickman.a1\Desktop\Programming 1\Pg153BudgetCalc\Pg153BudgetCalc\bin\Debug\IronPython.Modules.dll
+C:\Users\dickman.a1\Desktop\Programming 1\Pg153BudgetCalc\Pg153BudgetCalc\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\dickman.a1\Desktop\Programming 1\Pg153BudgetCalc\Pg153BudgetCalc\bin\Debug\Microsoft.Scripting.dll
+C:\Users\dickman.a1\Desktop\Programming 1\Pg153BudgetCalc\Pg153BudgetCalc\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\dickman.a1\Desktop\Programming 1\Pg153BudgetCalc\Pg153BudgetCalc\obj\Debug\Pg153BudgetCalc.pyprojResolveAssemblyReference.cache
+C:\Users\dickman.a1\Desktop\Programming 1\Pg153BudgetCalc\Pg153BudgetCalc\obj\Debug\Pg153BudgetCalc.MainForm.resources
+C:\Users\dickman.a1\Desktop\Programming 1\Pg153BudgetCalc\Pg153BudgetCalc\obj\Debug\Pg153BudgetCalc.pyproj.GenerateResource.Cache
+C:\Users\dickman.a1\Desktop\Programming 1\Pg153BudgetCalc\Pg153BudgetCalc\obj\Debug\Pg153BudgetCalc.exe
