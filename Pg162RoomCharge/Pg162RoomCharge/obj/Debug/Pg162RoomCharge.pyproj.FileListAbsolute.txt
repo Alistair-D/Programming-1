@@ -1,0 +1,12 @@
+C:\Users\dickman.a1\Desktop\Programming 1\Pg162RoomCharge\Pg162RoomCharge\obj\Debug\Pg162RoomCharge.pyprojResolveAssemblyReference.cache
+C:\Users\dickman.a1\Desktop\Programming 1\Pg162RoomCharge\Pg162RoomCharge\obj\Debug\Pg162RoomCharge.MainForm.resources
+C:\Users\dickman.a1\Desktop\Programming 1\Pg162RoomCharge\Pg162RoomCharge\obj\Debug\Pg162RoomCharge.pyproj.GenerateResource.Cache
+C:\Users\dickman.a1\Desktop\Programming 1\Pg162RoomCharge\Pg162RoomCharge\bin\Debug\Pg162RoomCharge.exe.config
+C:\Users\dickman.a1\Desktop\Programming 1\Pg162RoomCharge\Pg162RoomCharge\bin\Debug\Pg162RoomCharge.exe
+C:\Users\dickman.a1\Desktop\Programming 1\Pg162RoomCharge\Pg162RoomCharge\bin\Debug\Pg162RoomCharge.dll
+C:\Users\dickman.a1\Desktop\Programming 1\Pg162RoomCharge\Pg162RoomCharge\bin\Debug\IronPython.dll
+C:\Users\dickman.a1\Desktop\Programming 1\Pg162RoomCharge\Pg162RoomCharge\bin\Debug\IronPython.Modules.dll
+C:\Users\dickman.a1\Desktop\Programming 1\Pg162RoomCharge\Pg162RoomCharge\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\dickman.a1\Desktop\Programming 1\Pg162RoomCharge\Pg162RoomCharge\bin\Debug\Microsoft.Scripting.dll
+C:\Users\dickman.a1\Desktop\Programming 1\Pg162RoomCharge\Pg162RoomCharge\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\dickman.a1\Desktop\Programming 1\Pg162RoomCharge\Pg162RoomCharge\obj\Debug\Pg162RoomCharge.exe

@@ -15,8 +15,8 @@ class MainForm(Form):
         self._label2 = System.Windows.Forms.Label()
         self._textBox2 = System.Windows.Forms.TextBox()
         self._label3 = System.Windows.Forms.Label()
-        self._textBox3 = System.Windows.Forms.TextBox()
         self._button2 = System.Windows.Forms.Button()
+        self._label4 = System.Windows.Forms.Label()
         self.SuspendLayout()
         # 
         # button1
@@ -78,14 +78,6 @@ class MainForm(Form):
         self._label3.Text = "Salary Pay per Period:"
         self._label3.TextAlign = System.Drawing.ContentAlignment.TopCenter
         # 
-        # textBox3
-        # 
-        self._textBox3.Font = System.Drawing.Font("Microsoft Sans Serif", 20.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._textBox3.Location = System.Drawing.Point(297, 175)
-        self._textBox3.Name = "textBox3"
-        self._textBox3.Size = System.Drawing.Size(567, 38)
-        self._textBox3.TabIndex = 6
-        # 
         # button2
         # 
         self._button2.BackColor = System.Drawing.Color.Red
@@ -99,12 +91,21 @@ class MainForm(Form):
         self._button2.UseVisualStyleBackColor = False
         self._button2.Click += self.Button2Click
         # 
+        # label4
+        # 
+        self._label4.BackColor = System.Drawing.Color.White
+        self._label4.Font = System.Drawing.Font("Microsoft Sans Serif", 20.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
+        self._label4.Location = System.Drawing.Point(297, 175)
+        self._label4.Name = "label4"
+        self._label4.Size = System.Drawing.Size(567, 32)
+        self._label4.TabIndex = 8
+        # 
         # MainForm
         # 
         self.BackColor = System.Drawing.Color.FromArgb(192, 192, 255)
         self.ClientSize = System.Drawing.Size(943, 475)
+        self.Controls.Add(self._label4)
         self.Controls.Add(self._button2)
-        self.Controls.Add(self._textBox3)
         self.Controls.Add(self._label3)
         self.Controls.Add(self._textBox2)
         self.Controls.Add(self._label2)
@@ -128,4 +129,4 @@ class MainForm(Form):
         decAnnualSalary = float(self._textBox1.Text)
         intPayPeriods = int(self._textBox2.Text)
         decSalary = decAnnualSalary / intPayPeriods
-        self._textBox3.Text = str(round(decSalary, 2))
+        self._label4.Text = str(round(decSalary, 2))
