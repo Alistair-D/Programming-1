@@ -22,15 +22,10 @@ class MainForm(Form):
         self._textBox6 = System.Windows.Forms.TextBox()
         self._label6 = System.Windows.Forms.Label()
         self._label7 = System.Windows.Forms.Label()
-        self._textBox7 = System.Windows.Forms.TextBox()
-        self._textBox8 = System.Windows.Forms.TextBox()
         self._label8 = System.Windows.Forms.Label()
         self._label9 = System.Windows.Forms.Label()
-        self._textBox9 = System.Windows.Forms.TextBox()
-        self._textBox10 = System.Windows.Forms.TextBox()
         self._label10 = System.Windows.Forms.Label()
         self._label11 = System.Windows.Forms.Label()
-        self._textBox12 = System.Windows.Forms.TextBox()
         self._label13 = System.Windows.Forms.Label()
         self._button1 = System.Windows.Forms.Button()
         self._button2 = System.Windows.Forms.Button()
@@ -39,6 +34,11 @@ class MainForm(Form):
         self._label14 = System.Windows.Forms.Label()
         self._dateTimePicker1 = System.Windows.Forms.DateTimePicker()
         self._label12 = System.Windows.Forms.Label()
+        self._label15 = System.Windows.Forms.Label()
+        self._label16 = System.Windows.Forms.Label()
+        self._label17 = System.Windows.Forms.Label()
+        self._label18 = System.Windows.Forms.Label()
+        self._label19 = System.Windows.Forms.Label()
         self.SuspendLayout()
         # 
         # label1
@@ -143,22 +143,6 @@ class MainForm(Form):
         self._label7.Text = "Nights:"
         self._label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         # 
-        # textBox7
-        # 
-        self._textBox7.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._textBox7.Location = System.Drawing.Point(407, 373)
-        self._textBox7.Name = "textBox7"
-        self._textBox7.Size = System.Drawing.Size(189, 29)
-        self._textBox7.TabIndex = 16
-        # 
-        # textBox8
-        # 
-        self._textBox8.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._textBox8.Location = System.Drawing.Point(407, 326)
-        self._textBox8.Name = "textBox8"
-        self._textBox8.Size = System.Drawing.Size(189, 29)
-        self._textBox8.TabIndex = 15
-        # 
         # label8
         # 
         self._label8.Font = System.Drawing.Font("Microsoft Sans Serif", 12.25, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0)
@@ -179,22 +163,6 @@ class MainForm(Form):
         self._label9.Text = "Room Charges:"
         self._label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         # 
-        # textBox9
-        # 
-        self._textBox9.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._textBox9.Location = System.Drawing.Point(407, 475)
-        self._textBox9.Name = "textBox9"
-        self._textBox9.Size = System.Drawing.Size(189, 29)
-        self._textBox9.TabIndex = 20
-        # 
-        # textBox10
-        # 
-        self._textBox10.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._textBox10.Location = System.Drawing.Point(407, 428)
-        self._textBox10.Name = "textBox10"
-        self._textBox10.Size = System.Drawing.Size(189, 29)
-        self._textBox10.TabIndex = 19
-        # 
         # label10
         # 
         self._label10.Font = System.Drawing.Font("Microsoft Sans Serif", 12.25, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0)
@@ -214,14 +182,6 @@ class MainForm(Form):
         self._label11.TabIndex = 17
         self._label11.Text = "Subtotal:"
         self._label11.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        # 
-        # textBox12
-        # 
-        self._textBox12.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._textBox12.Location = System.Drawing.Point(407, 510)
-        self._textBox12.Name = "textBox12"
-        self._textBox12.Size = System.Drawing.Size(189, 29)
-        self._textBox12.TabIndex = 23
         # 
         # label13
         # 
@@ -303,9 +263,59 @@ class MainForm(Form):
         self._label12.Size = System.Drawing.Size(261, 23)
         self._label12.TabIndex = 31
         # 
+        # label15
+        # 
+        self._label15.BackColor = System.Drawing.Color.White
+        self._label15.Font = System.Drawing.Font("Microsoft Sans Serif", 12.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
+        self._label15.Location = System.Drawing.Point(418, 379)
+        self._label15.Name = "label15"
+        self._label15.Size = System.Drawing.Size(261, 23)
+        self._label15.TabIndex = 32
+        # 
+        # label16
+        # 
+        self._label16.BackColor = System.Drawing.Color.White
+        self._label16.Font = System.Drawing.Font("Microsoft Sans Serif", 12.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
+        self._label16.Location = System.Drawing.Point(418, 332)
+        self._label16.Name = "label16"
+        self._label16.Size = System.Drawing.Size(261, 18)
+        self._label16.TabIndex = 33
+        # 
+        # label17
+        # 
+        self._label17.BackColor = System.Drawing.Color.White
+        self._label17.Font = System.Drawing.Font("Microsoft Sans Serif", 12.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
+        self._label17.Location = System.Drawing.Point(418, 434)
+        self._label17.Name = "label17"
+        self._label17.Size = System.Drawing.Size(261, 23)
+        self._label17.TabIndex = 34
+        # 
+        # label18
+        # 
+        self._label18.BackColor = System.Drawing.Color.White
+        self._label18.Font = System.Drawing.Font("Microsoft Sans Serif", 12.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
+        self._label18.Location = System.Drawing.Point(418, 481)
+        self._label18.Name = "label18"
+        self._label18.Size = System.Drawing.Size(261, 25)
+        self._label18.TabIndex = 35
+        # 
+        # label19
+        # 
+        self._label19.BackColor = System.Drawing.Color.White
+        self._label19.Font = System.Drawing.Font("Microsoft Sans Serif", 12.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
+        self._label19.Location = System.Drawing.Point(418, 516)
+        self._label19.Name = "label19"
+        self._label19.Size = System.Drawing.Size(261, 23)
+        self._label19.TabIndex = 36
+        # 
         # MainForm
         # 
         self.ClientSize = System.Drawing.Size(954, 611)
+        self.Controls.Add(self._label19)
+        self.Controls.Add(self._label18)
+        self.Controls.Add(self._label17)
+        self.Controls.Add(self._label16)
+        self.Controls.Add(self._label15)
         self.Controls.Add(self._label12)
         self.Controls.Add(self._dateTimePicker1)
         self.Controls.Add(self._textBox13)
@@ -313,14 +323,9 @@ class MainForm(Form):
         self.Controls.Add(self._button3)
         self.Controls.Add(self._button2)
         self.Controls.Add(self._button1)
-        self.Controls.Add(self._textBox12)
         self.Controls.Add(self._label13)
-        self.Controls.Add(self._textBox9)
-        self.Controls.Add(self._textBox10)
         self.Controls.Add(self._label10)
         self.Controls.Add(self._label11)
-        self.Controls.Add(self._textBox7)
-        self.Controls.Add(self._textBox8)
         self.Controls.Add(self._label8)
         self.Controls.Add(self._label9)
         self.Controls.Add(self._textBox5)
@@ -341,7 +346,8 @@ class MainForm(Form):
 
 
     def MainFormLoad(self, sender, e):
-        self._label15.Text = time.strftime("%I: %M: %S: %p")
+        self._label12.Text = time.strftime("%I: %M: %S: %p")
+        
     
     def Button1Click(self, sender, e):
         decRoomCharges = 0.0
@@ -351,11 +357,34 @@ class MainForm(Form):
         decTotal = 0.0
         decTAX_RATE = 0.08
         
-        decAddCharges = float(self._txtRoomService.Text) + \
-          float(self.txtTelephone.Text) + \
-          float(self.txtMisc.Text)
-        self._lbAddCharges.Text = str(round(decAddCharges, 2))
+        try:
+            decAddCharges = float(self._textBox4.Text) + \
+                float(self._textBox3.Text) + \
+                float(self._textBox13.Text)
+            self._label15.Text = str(round(decAddCharges, 2))
+        except:
+            MessageBox.Show("Room Service, Telephone and Misc. must be numbers", "Error")
+            
+        try:
+            decRoomCharges = float(self._textBox6.Text) * \
+                float(self._textBox5.Text)
+            self._label16.Text = str(round(decRoomCharges, 2))
+        except:
+            MessageBox.Show("Nights and Nightly Charges must be numbers", "Error")
+        
+        #Subtotal
+        decSubtotal = decRoomCharges + decAddCharges
+        self._label17.Text = str(round(decSubtotal, 2))
 
+
+        #Tax
+        decTax = decSubtotal * decTAX_RATE
+        self._label18.Text = str(round(decTax, 2))
+        
+        #Total
+        decTotal = decSubtotal + decTax
+        self._label19.Text = str(round(decTotal, 2))
+        
     def Button2Click(self, sender, e):
         pass
 
