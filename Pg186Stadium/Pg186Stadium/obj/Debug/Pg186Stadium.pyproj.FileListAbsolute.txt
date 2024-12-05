@@ -1,0 +1,12 @@
+C:\Users\dickman.a1\Desktop\Programming 1\Pg186Stadium\Pg186Stadium\bin\Debug\Pg186Stadium.exe.config
+C:\Users\dickman.a1\Desktop\Programming 1\Pg186Stadium\Pg186Stadium\bin\Debug\Pg186Stadium.exe
+C:\Users\dickman.a1\Desktop\Programming 1\Pg186Stadium\Pg186Stadium\bin\Debug\Pg186Stadium.dll
+C:\Users\dickman.a1\Desktop\Programming 1\Pg186Stadium\Pg186Stadium\bin\Debug\IronPython.dll
+C:\Users\dickman.a1\Desktop\Programming 1\Pg186Stadium\Pg186Stadium\bin\Debug\IronPython.Modules.dll
+C:\Users\dickman.a1\Desktop\Programming 1\Pg186Stadium\Pg186Stadium\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\dickman.a1\Desktop\Programming 1\Pg186Stadium\Pg186Stadium\bin\Debug\Microsoft.Scripting.dll
+C:\Users\dickman.a1\Desktop\Programming 1\Pg186Stadium\Pg186Stadium\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\dickman.a1\Desktop\Programming 1\Pg186Stadium\Pg186Stadium\obj\Debug\Pg186Stadium.pyprojResolveAssemblyReference.cache
+C:\Users\dickman.a1\Desktop\Programming 1\Pg186Stadium\Pg186Stadium\obj\Debug\Pg186Stadium.MainForm.resources
+C:\Users\dickman.a1\Desktop\Programming 1\Pg186Stadium\Pg186Stadium\obj\Debug\Pg186Stadium.pyproj.GenerateResource.Cache
+C:\Users\dickman.a1\Desktop\Programming 1\Pg186Stadium\Pg186Stadium\obj\Debug\Pg186Stadium.exe

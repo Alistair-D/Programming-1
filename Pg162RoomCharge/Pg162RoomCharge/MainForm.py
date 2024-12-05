@@ -341,6 +341,7 @@ class MainForm(Form):
         self.Controls.Add(self._label1)
         self.Name = "MainForm"
         self.Text = "Pg162RoomCharge"
+        self.Load += self.MainFormLoad
         self.ResumeLayout(False)
         self.PerformLayout()
 
@@ -386,7 +387,16 @@ class MainForm(Form):
         self._label19.Text = str(round(decTotal, 2))
         
     def Button2Click(self, sender, e):
-        pass
+        self._textBox6.Text = ""
+        self._textBox5.Text = ""
+        self._textBox3.Text = ""
+        self._textBox13.Text = ""
+        self._textBox4.Text = ""
+        self._label16.Text = ""
+        self._label15.Text = ""
+        self._label17.Text = ""
+        self._label18.Text = ""
+        self._label19.Text = ""
 
     def Button3Click(self, sender, e):
         Application.Exit()
