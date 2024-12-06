@@ -144,7 +144,9 @@ class MainForm(Form):
         self._label4.Text = str(fname)
 
     def Button2Click(self, sender, e):
-        pass
+        self._textBox1.Text = ""
+        self._textBox2.Text = ""
+        self._label4.Text = ""
 
     def Button3Click(self, sender, e):
         Application.Exit()

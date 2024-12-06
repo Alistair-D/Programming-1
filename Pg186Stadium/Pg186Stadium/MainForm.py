@@ -271,7 +271,15 @@ class MainForm(Form):
         
 
     def Button2Click(self, sender, e):
-        pass
+        self._label13.Text = ""
+        self._label10.Text = ""
+        self._label11.Text = ""
+        self._label12.Text = ""
+        
+        self._textBox1.Text = ""
+        self._textBox2.Text = ""
+        self._textBox3.Text = ""
+        
 
     def Button3Click(self, sender, e):
         Application.Exit()

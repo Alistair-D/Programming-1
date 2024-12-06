@@ -1,0 +1,12 @@
+C:\Users\dickman.a1\Desktop\Programming 1\Pg198ScoreAverage\Pg198ScoreAverage\bin\Debug\Pg198ScoreAverage.exe.config
+C:\Users\dickman.a1\Desktop\Programming 1\Pg198ScoreAverage\Pg198ScoreAverage\bin\Debug\Pg198ScoreAverage.exe
+C:\Users\dickman.a1\Desktop\Programming 1\Pg198ScoreAverage\Pg198ScoreAverage\bin\Debug\Pg198ScoreAverage.dll
+C:\Users\dickman.a1\Desktop\Programming 1\Pg198ScoreAverage\Pg198ScoreAverage\bin\Debug\IronPython.dll
+C:\Users\dickman.a1\Desktop\Programming 1\Pg198ScoreAverage\Pg198ScoreAverage\bin\Debug\IronPython.Modules.dll
+C:\Users\dickman.a1\Desktop\Programming 1\Pg198ScoreAverage\Pg198ScoreAverage\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\dickman.a1\Desktop\Programming 1\Pg198ScoreAverage\Pg198ScoreAverage\bin\Debug\Microsoft.Scripting.dll
+C:\Users\dickman.a1\Desktop\Programming 1\Pg198ScoreAverage\Pg198ScoreAverage\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\dickman.a1\Desktop\Programming 1\Pg198ScoreAverage\Pg198ScoreAverage\obj\Debug\Pg198ScoreAverage.pyprojResolveAssemblyReference.cache
+C:\Users\dickman.a1\Desktop\Programming 1\Pg198ScoreAverage\Pg198ScoreAverage\obj\Debug\Pg198ScoreAverage.MainForm.resources
+C:\Users\dickman.a1\Desktop\Programming 1\Pg198ScoreAverage\Pg198ScoreAverage\obj\Debug\Pg198ScoreAverage.pyproj.GenerateResource.Cache
+C:\Users\dickman.a1\Desktop\Programming 1\Pg198ScoreAverage\Pg198ScoreAverage\obj\Debug\Pg198ScoreAverage.exe

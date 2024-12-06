@@ -140,7 +140,7 @@ class MainForm(Form):
         # 
         self._label7.BackColor = System.Drawing.Color.White
         self._label7.Font = System.Drawing.Font("Microsoft Sans Serif", 12.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._label7.Location = System.Drawing.Point(146, 273)
+        self._label7.Location = System.Drawing.Point(146, 268)
         self._label7.Name = "label7"
         self._label7.Size = System.Drawing.Size(303, 23)
         self._label7.TabIndex = 12
@@ -179,10 +179,19 @@ class MainForm(Form):
 
 
     def Button1Click(self, sender, e):
-        pass
+        TestScore1 = float(self._textBox1.Text)
+        TestScore2 = float(self._textBox2.Text)
+        TestScore3 = float(self._textBox3.Text)
+        
+        Average = float(TestScore1 + TestScore2 + TestScore3) / 3
+        
+        self._label7.Text = str(Average)
 
     def Button2Click(self, sender, e):
-        pass
+        self._label7.Text = ""
+        self._textBox1.Text = ""
+        self._textBox2.Text = ""
+        self._textBox3.Text = ""
 
     def Button3Click(self, sender, e):
         Application.Exit()
