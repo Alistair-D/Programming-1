@@ -28,6 +28,7 @@ class MainForm(Form):
         self._timerleft = System.Windows.Forms.Timer(self._components)
         self._timerball = System.Windows.Forms.Timer(self._components)
         self._timermulti = System.Windows.Forms.Timer(self._components)
+        self._label2 = System.Windows.Forms.Label()
         self.SuspendLayout()
         # 
         # lbltitle
@@ -108,10 +109,21 @@ class MainForm(Form):
         # 
         self._timermulti.Interval = 20
         # 
+        # label2
+        # 
+        self._label2.ForeColor = System.Drawing.Color.Black
+        self._label2.Location = System.Drawing.Point(950, 584)
+        self._label2.Name = "label2"
+        self._label2.Size = System.Drawing.Size(46, 23)
+        self._label2.TabIndex = 8
+        self._label2.Text = "Ocean"
+        self._label2.MouseClick += self.Label2MouseClick
+        # 
         # MainForm
         # 
         self.BackColor = System.Drawing.Color.Black
         self.ClientSize = System.Drawing.Size(988, 607)
+        self.Controls.Add(self._label2)
         self.Controls.Add(self._lblright)
         self.Controls.Add(self._lblleft)
         self.Controls.Add(self._lblball)
@@ -227,11 +239,19 @@ class MainForm(Form):
             rpdl.Top = (self.Height // 2) - 50 + rpdl.Height
             """TODO: RESET SECRETS"""
             bl.BackColor = Color.White
+            self._lblball.BackColor = Color.White
+            self._lblleft.BackColor = Color.White
+            self._lblright.BackColor = Color.White
+            self.BackColor = Color.Black
+            self._label2.ForeColor = Color.Black
             
         if e.KeyCode == Keys.R:
             reset()
             
         #Secret Easter Eggs
+        if e.KeyCode == Keys.I:
+            self._lblball.BackColor = Color.Black
+            MessageBox.Show("Impossible Mode Activated! Ball is Invisible!")
         
         if e.KeyCode == Keys.Enter:
             tball.Enabled = True
@@ -253,7 +273,6 @@ class MainForm(Form):
                 self.flagright = True
                 tright.Enabled = True
                 
-            """ TODO: FINISH MULTIPLAYER CONTROLS"""
         if tmult.Enabled and tball.Enabled:
             if e.KeyCode == Keys.W:
                 self.flagleft = False
@@ -296,3 +315,22 @@ class MainForm(Form):
         self._lblball.Left = self.Width // 2
         self._lblball.Top = self.Height // 2
 
+
+#Easter Egg 2
+    def Button1Click(self, sender, e):
+        pass
+        
+     
+
+    def Label2MouseClick(self, sender, e):
+        self._lblball.BackColor = Color.Yellow
+        self._lblleft.BackColor = Color.Coral
+        self._lblright.BackColor = Color.Coral
+        self._label2.ForeColor = Color.DeepSkyBlue
+        self.BackColor = Color.DeepSkyBlue
+        self.Top = self.R.Next(-4, 5)
+        self.Left = self.R.Next(-4, 5)
+        MessageBox.Show("Woahhh! There was a Flood!")
+        MessageBox.Show("Under the Seaaaaaaa")
+        MessageBox.Show("Darlin' its better")
+        MessageBox.Show("Under the Seaaaaaaa")
