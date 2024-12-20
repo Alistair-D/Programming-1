@@ -143,6 +143,7 @@ class MainForm(Form):
         pass
 
     def TimerballTick(self, sender, e):
+        tdum =  self._timerdummy
         ball = self._lblball
         lpdl = self._lblleft
         rpdl = self._lblright
@@ -204,6 +205,12 @@ class MainForm(Form):
             self._lbltitle.Text = "left Player Wins! Press R to Restart"
             self._lbltitle.Visible = True
             
+        if tdum.Enabled == True:
+            if lscore == 9:
+                if ball.Location.X < 50:
+                    ball.Location.Y = ball.Location.Y + 200
+                    
+                    
         if self._timerboolean.Enabled:
             lpdl.Top = ball.Top - 20
             
@@ -273,6 +280,9 @@ class MainForm(Form):
                 self.flagright = True
                 tright.Enabled = True
                 
+                    
+                    
+                    
         if tmult.Enabled and tball.Enabled:
             if e.KeyCode == Keys.W:
                 self.flagleft = False
@@ -328,9 +338,11 @@ class MainForm(Form):
         self._lblright.BackColor = Color.Coral
         self._label2.ForeColor = Color.DeepSkyBlue
         self.BackColor = Color.DeepSkyBlue
-        self.Top = self.R.Next(-4, 5)
-        self.Left = self.R.Next(-4, 5)
         MessageBox.Show("Woahhh! There was a Flood!")
         MessageBox.Show("Under the Seaaaaaaa")
         MessageBox.Show("Darlin' its better")
         MessageBox.Show("Under the Seaaaaaaa")
+        
+        
+        
+        
